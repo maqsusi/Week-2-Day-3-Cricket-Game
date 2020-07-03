@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            float: left;
+            text-align: center;
+        }
+        table{
+            
+            font-size: 13px;  
+                       
+        }
+        #scoreboard
+        {
+            margin-top: 100px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        #last
+        {   
+            margin-left: 15%;
+            width: 70%;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+
+    <div id='table1'>
+        <h2>TEAM 1 Score</h2>
+        <h4 id = 't1Score'></h4>
+        <br>
+        <button id = 'team1Hit' onclick=play1()>HIT</button>
+        <table id="team1" class = 'table table-bordered'></table>
+    </div>
+    <div id="scoreboard">
+        <button id = 'genScore' onclick=findResult()> Generate Result </button><br>
+
+    </div>
+    <div id = 'table2'>
+        <h2>TEAM 2 Score</h2>
+        <h4 id = 't2Score'></h4>
+        <br>
+        <button id = 'team2Hit' onclick = play2()>HIT</button>
+        <table id = 'team2' class = 'table table-bordered'></table>
+    </div>
+    <script src='script.js'></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<div id = 'last'>
+    *Please note that I am unable to add the runs that have been randomly generated to the tables above. I believe I am making some mistake in using the document.getElementbyID selector to select individual cells in the tables to update them. The runs are generated & the players get out on 0. The result of the match is also generated when clicking on 'GENERATE RESULT'. I am only unable to update the table values. Please click on both the HIT buttons to see the working output.
+</div>
+
+</body>
+
+</html>
